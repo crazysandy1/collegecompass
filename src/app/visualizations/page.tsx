@@ -5,6 +5,7 @@ import { AverageRatingByCourseChart } from '@/components/charts/AverageRatingByC
 import { CollegeRatingDistributionChart } from '@/components/charts/CollegeRatingDistributionChart';
 import { mockColleges } from '@/lib/data';
 import type { College } from '@/types';
+import Image from 'next/image';
 
 async function getVisualizationData(): Promise<{ colleges: College[] }> {
   // Simulate API call
@@ -17,6 +18,17 @@ export default async function VisualizationsPage() {
 
   return (
     <div>
+      <div className="mb-8 overflow-hidden rounded-lg shadow-lg">
+        <Image
+          src="https://placehold.co/1200x300.png"
+          alt="Data visualization banner"
+          width={1200}
+          height={300}
+          className="w-full object-cover"
+          data-ai-hint="data abstract"
+          priority
+        />
+      </div>
       <PageTitle 
         title="Data Visualizations" 
         subtitle="Explore trends and insights about colleges in India through interactive charts." 
