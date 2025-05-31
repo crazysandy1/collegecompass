@@ -11,10 +11,7 @@ export default function AboutPage() {
         subtitle="Guiding students towards a brighter future." 
       />
 
-      <section className="grid md:grid-cols-2 gap-12 items-center">
-        <div className="rounded-xl shadow-2xl bg-secondary flex items-center justify-center h-64 md:h-auto">
-          {/* Image removed */}
-        </div>
+      <section className="grid md:grid-cols-1 gap-12 items-center">
         <div className="space-y-6">
           <h2 className="text-3xl font-headline font-semibold text-primary">Our Mission</h2>
           <p className="text-lg text-foreground leading-relaxed">

@@ -49,7 +49,6 @@ export default async function CollegeDetailPage({ params }: { params: { id: stri
       <div className="grid md:grid-cols-3 gap-8">
         <div className="md:col-span-2 space-y-8">
           <Card className="shadow-xl overflow-hidden">
-            {/* Image removed */}
             <CardContent className="p-6">
               <h2 className="text-2xl font-headline font-semibold text-primary mb-4">About the College</h2>
               <p className="text-foreground/90 leading-relaxed">{college.description}</p>

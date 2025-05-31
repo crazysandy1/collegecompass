@@ -9,10 +9,8 @@ export default function Home() {
     <div className="space-y-12">
       <section className="text-center py-12 bg-gradient-to-r from-primary/10 via-background to-primary/10 rounded-lg shadow-lg">
         <div className="container mx-auto px-4">
-          <div className="mb-8 overflow-hidden rounded-lg shadow-md bg-secondary flex items-center justify-center h-64 md:h-80">
-            {/* Image removed, added background color and height for placeholder */}
-          </div>
-          <Compass className="mx-auto h-24 w-24 text-primary mb-6" />
+          
+          <Compass className="mx-auto h-24 w-24 text-primary mb-6 mt-8" />
           <h1 className="text-5xl font-headline font-bold text-primary mb-4">
             Welcome to College Compass
           </h1>
@@ -68,9 +66,6 @@ export default function Home() {
       
       <section className="py-12 bg-secondary/50 rounded-lg shadow-md">
         <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-8">
-          <div className="md:w-1/2 rounded-lg shadow-xl bg-card flex items-center justify-center h-64">
-            {/* Image removed */}
-          </div>
           <div className="md:w-1/2">
             <h2 className="text-3xl font-headline font-semibold text-primary mb-4">
               Empowering Your Educational Journey

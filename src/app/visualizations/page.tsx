@@ -17,9 +17,6 @@ export default async function VisualizationsPage() {
 
   return (
     <div>
-      <div className="mb-8 overflow-hidden rounded-lg shadow-lg bg-secondary flex items-center justify-center h-48 md:h-64">
-        {/* Image removed, added background color and height for placeholder */}
-      </div>
       <PageTitle 
         title="Data Visualizations" 
         subtitle="Explore trends and insights about colleges in India through interactive charts." 
