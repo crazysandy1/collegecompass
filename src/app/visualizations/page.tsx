@@ -1,6 +1,8 @@
+
 import { PageTitle } from '@/components/common/PageTitle';
 import { CollegesByStateChart } from '@/components/charts/CollegesByStateChart';
 import { AverageRatingByCourseChart } from '@/components/charts/AverageRatingByCourseChart';
+import { CollegeRatingDistributionChart } from '@/components/charts/CollegeRatingDistributionChart';
 import { mockColleges } from '@/lib/data';
 import type { College } from '@/types';
 
@@ -22,6 +24,7 @@ export default async function VisualizationsPage() {
       <div className="space-y-12 mt-8">
         <CollegesByStateChart colleges={colleges} />
         <AverageRatingByCourseChart colleges={colleges} />
+        <CollegeRatingDistributionChart colleges={colleges} />
       </div>
     </div>
   );
