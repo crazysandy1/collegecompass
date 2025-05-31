@@ -1,3 +1,4 @@
+
 import { mockColleges, mockReviews } from '@/lib/data';
 import type { College, Review } from '@/types';
 import Image from 'next/image';
@@ -55,7 +56,7 @@ export default async function CollegeDetailPage({ params }: { params: { id: stri
               width={800}
               height={450}
               className="w-full h-auto object-cover"
-              data-ai-hint="college campus aerial"
+              data-ai-hint="campus aerial"
               priority
             />
             <CardContent className="p-6">

@@ -1,3 +1,4 @@
+
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Compass, ListChecks, BarChart3, Lightbulb } from 'lucide-react';
@@ -16,7 +17,7 @@ export default function Home() {
               width={1200}
               height={400}
               className="w-full object-cover"
-              data-ai-hint="university campus students"
+              data-ai-hint="university campus"
               priority
             />
           </div>
