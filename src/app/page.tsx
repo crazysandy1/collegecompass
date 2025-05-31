@@ -9,6 +9,17 @@ export default function Home() {
     <div className="space-y-12">
       <section className="text-center py-12 bg-gradient-to-r from-primary/10 via-background to-primary/10 rounded-lg shadow-lg">
         <div className="container mx-auto px-4">
+          <div className="mb-8 overflow-hidden rounded-lg shadow-md">
+            <Image
+              src="https://placehold.co/1200x400.png"
+              alt="University campus with students"
+              width={1200}
+              height={400}
+              className="w-full object-cover"
+              data-ai-hint="university campus students"
+              priority
+            />
+          </div>
           <Compass className="mx-auto h-24 w-24 text-primary mb-6" />
           <h1 className="text-5xl font-headline font-bold text-primary mb-4">
             Welcome to College Compass
