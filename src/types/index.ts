@@ -1,3 +1,4 @@
+
 export interface Review {
   id: string;
   collegeId: string;
@@ -24,7 +25,6 @@ export interface College {
   };
   coursesOffered: string[];
   description: string;
-  imageUrl: string;
   averageRating: number;
   reviews: Review[];
   resources: CollegeResource;

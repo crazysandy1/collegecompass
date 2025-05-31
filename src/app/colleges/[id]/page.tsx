@@ -1,7 +1,6 @@
 
 import { mockColleges, mockReviews } from '@/lib/data';
 import type { College, Review } from '@/types';
-import Image from 'next/image';
 import Link from 'next/link';
 import { PageTitle } from '@/components/common/PageTitle';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -50,15 +49,7 @@ export default async function CollegeDetailPage({ params }: { params: { id: stri
       <div className="grid md:grid-cols-3 gap-8">
         <div className="md:col-span-2 space-y-8">
           <Card className="shadow-xl overflow-hidden">
-            <Image
-              src={college.imageUrl}
-              alt={`Campus of ${college.name}`}
-              width={800}
-              height={450}
-              className="w-full h-auto object-cover"
-              data-ai-hint="campus aerial"
-              priority
-            />
+            {/* Image removed */}
             <CardContent className="p-6">
               <h2 className="text-2xl font-headline font-semibold text-primary mb-4">About the College</h2>
               <p className="text-foreground/90 leading-relaxed">{college.description}</p>

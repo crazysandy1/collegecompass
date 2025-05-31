@@ -1,3 +1,4 @@
+
 import type { College, Review } from '@/types';
 
 export const mockReviews: Review[] = [
@@ -63,7 +64,6 @@ export const mockColleges: College[] = [
     coursesOffered: ['Computer Science', 'Mechanical Engineering', 'Electronics Engineering'],
     description:
       'A leading institute known for its strong engineering programs and research focus. Established in 1960, it boasts a sprawling campus and numerous alumni in top positions.',
-    imageUrl: 'https://placehold.co/600x400.png',
     averageRating: 4.5,
     reviews: mockReviews.filter(r => r.collegeId === 'college1'),
     resources: {
@@ -84,7 +84,6 @@ export const mockColleges: College[] = [
     coursesOffered: ['B.Com', 'BBA', 'Economics (Hons)'],
     description:
       'Located in the heart of Mumbai, this college is renowned for its commerce and management programs. It has a strong industry interface and active student clubs.',
-    imageUrl: 'https://placehold.co/600x400.png',
     averageRating: 3.5,
     reviews: mockReviews.filter(r => r.collegeId === 'college2'),
     resources: {
@@ -104,7 +103,6 @@ export const mockColleges: College[] = [
     coursesOffered: ['MBBS', 'BDS', 'Pharmacy'],
     description:
       'A well-respected medical college with state-of-the-art facilities and a teaching hospital. Focuses on practical learning and patient care.',
-    imageUrl: 'https://placehold.co/600x400.png',
     averageRating: 4.8,
     reviews: mockReviews.filter(r => r.collegeId === 'college3'),
     resources: {
@@ -125,7 +123,6 @@ export const mockColleges: College[] = [
     coursesOffered: ['History', 'Fine Arts', 'Literature'],
     description:
       'Known for its vibrant arts scene and focus on cultural heritage. Offers a creative environment for students interested in humanities and arts.',
-    imageUrl: 'https://placehold.co/600x400.png',
     averageRating: 2.0,
     reviews: mockReviews.filter(r => r.collegeId === 'college4'),
     resources: {

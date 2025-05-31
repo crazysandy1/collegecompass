@@ -1,5 +1,5 @@
+
 import type { College } from '@/types';
-import Image from 'next/image';
 import Link from 'next/link';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -13,18 +13,9 @@ interface CollegeCardProps {
 export function CollegeCard({ college }: CollegeCardProps) {
   return (
     <Card className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col h-full">
-      <CardHeader className="p-0">
-        <Image
-          src={college.imageUrl}
-          alt={`Campus of ${college.name}`}
-          width={400}
-          height={250}
-          className="w-full h-48 object-cover"
-          data-ai-hint="university building"
-        />
-      </CardHeader>
+      {/* CardHeader with Image removed */}
       <CardContent className="p-6 flex-grow">
-        <CardTitle className="text-xl font-headline mb-2 text-primary">{college.name}</CardTitle>
+        <CardTitle className="text-xl font-headline mb-2 text-primary pt-6">{college.name}</CardTitle>
         <CardDescription className="text-sm text-muted-foreground mb-3 flex items-center">
           <MapPin className="w-4 h-4 mr-2 text-accent" />
           {college.address.city}, {college.address.state}

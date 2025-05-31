@@ -1,6 +1,6 @@
+
 import { PageTitle } from '@/components/common/PageTitle';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import Image from 'next/image';
 import { Users, Target, Eye } from 'lucide-react';
 
 export default function AboutPage() {
@@ -12,15 +12,8 @@ export default function AboutPage() {
       />
 
       <section className="grid md:grid-cols-2 gap-12 items-center">
-        <div>
-          <Image 
-            src="https://placehold.co/600x400.png" 
-            alt="Diverse group of students"
-            width={600}
-            height={400}
-            className="rounded-xl shadow-2xl"
-            data-ai-hint="students graduation"
-          />
+        <div className="rounded-xl shadow-2xl bg-secondary flex items-center justify-center h-64 md:h-auto">
+          {/* Image removed */}
         </div>
         <div className="space-y-6">
           <h2 className="text-3xl font-headline font-semibold text-primary">Our Mission</h2>
